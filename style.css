@@ -1,0 +1,246 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+}
+p{
+    color: white;
+}
+h3{
+    color: white;
+}
+#header{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+
+/* -------css for the navbar.-------- */
+.nav{
+    position: fixed;
+    margin: 1px 1px;
+    padding: 1px 1px;
+    background-color: rgb(162, 159, 159);
+    
+   
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#port{
+    color: rgb(230, 33, 33);
+    font-size:32px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/*-------- CSS for the home section--------- */
+/* the text */
+.header-content{
+    margin-top: 3%;
+    
+    
+    
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col-1{
+    color: white;
+    flex-basis: 40%;
+    padding-left: 100px;
+    padding-top: 200px;
+}
+.col-2{
+    flex-basis: 40%;
+   
+}
+.card{
+    height: 490px;
+    
+   
+}
+
+
+/* -----CSS for the about section */
+#about{
+    margin: 15% 10% 10% 10%;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-img{
+    border-radius: 50%;
+    margin-top: 15%;
+}
+.about-col-2{
+    flex-basis: 60%;
+    color: white;
+}
+.card img{
+    max-width: 100%;
+    
+   
+}
+.tittle{
+    font-weight: 600;
+    color: white;
+}
+.tabs{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tabs-tittles{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tabs-tittles::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+
+}
+.tabs-tittles.active-link::after{
+     width: 100%;
+     
+}
+.tab-contents{
+    margin-left: 0;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0 ;
+}
+.tab-contents ul li span{
+    color: rgb(248, 122, 122);
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+/*-----CSS for the work section------*/
+#works{
+    margin: 12% 10% 10% 10%;
+}
+.sub-tittle{
+    font-weight: 600;
+    color: white;
+    margin-left: 400px;
+    position: relative;
+}
+#row-work{
+    margin-top: 6%;
+}
+.work-col-1{
+    flex-basis: 40%;
+}
+.work-col-2{
+    flex-basis: 40%;
+    
+}
+.work-img{
+    border-radius: 10px;
+}
+
+/* --------CSS for contact section-----*/
+#contact{
+    margin: 12% 10% 10% 10% ;
+}
+.contact-left{
+    flex-basis: 30%;
+    margin-left: 30px;
+}
+.contact-right{
+    flex-basis: 50%;
+    margin-left: 30px;
+    padding-left: 3opx;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn{
+    display: inline-block;
+    background: #ff004f;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 80%;
+    border: 0;
+    outline: none;
+    background: rgb(162, 159, 159);
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+/* -----CSS for footer----*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+
+}
+
+/* -----------CSS for small screen */
+@media only screen and (max-width: 600px){
+
+}
