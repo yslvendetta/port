@@ -239,8 +239,95 @@ form .btn{
     margin-top: 20px;
 
 }
+ nav .fa-sharp{
+    display: none;
+}
 
 /* -----------CSS for small screen */
 @media only screen and (max-width: 600px){
+    nav .fa-sharp{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    nav ul{
+        background:#ababab ;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s ;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
 
+    }
+    nav ul .fa-sharp{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .col-1{
+        color: white;
+        flex-basis: 40%;
+        padding-left: 20px;
+        padding-top: 100px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .home-img{
+        height: 300px;
+        width: 250px;
+    }
+    .about-img{
+        height: 200px;
+        width: 200px;
+    }
+    .about-col-2{
+        flex-basis: 60%;
+        color: white;
+        margin-top: 40px;
+    }
+    .tabs-tittles{
+        margin-right: 50px;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
+    }
+    .sub-tittle{
+        font-weight: 600;
+        color: white;
+        margin-left: 60px;
+        position: relative;
+    }
+    .work-col-2{
+        flex-basis: 40%;
+        margin-top: 40px;
+    }
+    form input, form textarea{
+        width: 100%;
+        border: 0;
+        outline: none;
+        background: rgb(162, 159, 159);
+        padding: 15px;
+        margin: 15px 0;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 6px;
+    }
+    form .btn{
+        padding: 14px 20px;
+        font-size: 15px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    
 }

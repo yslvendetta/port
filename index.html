@@ -14,12 +14,14 @@
         <div class="nav">
             <nav>
                 <a id="port">Portfolio</a>
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#works">Works</a></li>
                     <li><a href="#contact">Contacts</a></li>
+                    <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i> 
             </nav>          
         </div>
 
@@ -31,11 +33,7 @@
                     <h1>Mike Wambugu,<br>Front-end Engineer<br>Nairobi, Kenya</h1>                 
                 </div>
                 <div class="col-2">
-                    <img src="pictures/profile.jpg" alt="Image here" width="586" height="642">
-                    <!-- <div class="card ">
-                        <img src="pictures/profile.jpg"  alt="...">
-                       
-                      </div> -->
+                    <img class="home-img" src="pictures/profile.jpg" alt="Image here" width="586" height="642">
                 </div>
             </div>
         </div>
@@ -44,7 +42,7 @@
         <div id="about">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="pictures/Summer Collection.png" alt="image"  width="317" height="305" class="about-img">                
+                    <img class="about-img" src="pictures/Summer Collection.png" alt="image"  width="317" height="305" class="about-img">                
                 </div>
                 <div class="about-col-2">
                    <h1 class="tittle">About Me</h1>
@@ -156,6 +154,17 @@
         document.getElementById(tabname).classList.add("active-tab")
     }
 
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-300px"
+    }
 </script>
 </body>
 </html>
